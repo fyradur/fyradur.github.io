@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Blog of John Möller</title>
+    <link>https://examplesite.com/blog/</link>
+    <description>Recent content in Blogs on Blog of John Möller</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://examplesite.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First post</title>
+      <link>https://examplesite.com/blog/my-first-post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://examplesite.com/blog/my-first-post/</guid>
+      <description> What is this?  This is the first post to this hugo website.
+  </description>
+    </item>
+    
+  </channel>
+</rss>

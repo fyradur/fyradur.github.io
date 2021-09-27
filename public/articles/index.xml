@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Articles on Blog of John Möller</title>
+    <link>https://examplesite.com/articles/</link>
+    <description>Recent content in Articles on Blog of John Möller</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 27 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://examplesite.com/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Monads finally explained</title>
+      <link>https://examplesite.com/articles/monads/</link>
+      <pubDate>Mon, 27 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://examplesite.com/articles/monads/</guid>
+      <description>Introduction  The concept of a monad is probably the most infamous among begginers who are learning functional programming. It&amp;#39;s notoriousness is understandable as it is from an advanced mathematical field called Category Theory. We know that even though math is essential for programming, the enthusiasm for the subject among programmers isn&amp;#39;t guaranteed. So if you didn&amp;#39;t like High school algebra, then it&amp;#39;s pretty self explanatory why a graduate math subject is difficult.</description>
+    </item>
+    
+  </channel>
+</rss>
