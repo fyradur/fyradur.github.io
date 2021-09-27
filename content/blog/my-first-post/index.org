@@ -1,10 +1,14 @@
   #+title: First post
   #+author: John Möller
-  #+lastmod: 2021-09-27
+  #+lastmod: 2021-09-28
   #+categories[]: emacs hugo org-mode
   #+draft: true
   #+variable: value
   #+list[]: value_1 value_2 value_3
 
 * What is this?
-This is the first post to this hugo website.
+This is the first post to this hugo website. It is a test post
+
+#+begin_src python :results output :session
+print(5+10)
+#+end_src
