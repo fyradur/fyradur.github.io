@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>programming on Blog of John Möller</title>
+    <link>https://gogl0l.github.io/categories/programming/</link>
+    <description>Recent content in programming on Blog of John Möller</description>
+    <image>
+      <url>https://gogl0l.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://gogl0l.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 27 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gogl0l.github.io/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Monads finally explained</title>
+      <link>https://gogl0l.github.io/articles/monads/</link>
+      <pubDate>Mon, 27 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://gogl0l.github.io/articles/monads/</guid>
+      <description>Introduction  The concept of a monad is probably the most infamous among begginers who are learning functional programming. It&amp;#39;s notoriousness is understandable as it is from an advanced mathematical field called Category Theory. We know that even though math is essential for programming, the enthusiasm for the subject among programmers isn&amp;#39;t guaranteed. So if you didn&amp;#39;t like High school algebra, then it&amp;#39;s pretty self explanatory why a graduate math subject is difficult.</description>
+    </item>
+    
+  </channel>
+</rss>
