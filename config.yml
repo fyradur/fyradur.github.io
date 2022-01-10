@@ -1,5 +1,5 @@
-baseURL: "https://gogl0l.github.io/"
-title: Blog of John Möller
+baseURL: "https://fyradur.github.io/"
+title: Blog of Fyradur
 paginate: 5
 theme: PaperMod
 
@@ -16,7 +16,7 @@ minify:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    title: Blog of John Möller
+    title: Blog of Fyradur
     description: "Articles about math and technology."
     keywords: [Blog, Portfolio, PaperMod]
     author: Me
