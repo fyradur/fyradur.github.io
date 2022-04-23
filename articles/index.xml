@@ -12,11 +12,13 @@
     <lastBuildDate>Mon, 27 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fyradur.github.io/articles/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Monads finally explained</title>
-      <link>https://fyradur.github.io/articles/monads/</link>
+      <link>https://fyradur.github.io/articles/test-article/</link>
       <pubDate>Mon, 27 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fyradur.github.io/articles/monads/</guid>
-      <description>Introduction  The concept of a monad is probably the most infamous among begginers who are learning functional programming. It&amp;#39;s notoriousness is understandable as it is from an advanced mathematical field called Category Theory. We know that even though math is essential for programming, the enthusiasm for the subject among programmers isn&amp;#39;t guaranteed. So if you didn&amp;#39;t like High school algebra, then it&amp;#39;s pretty self explanatory why a graduate math subject is difficult.</description>
+      <guid>https://fyradur.github.io/articles/test-article/</guid>
+      <description> Test code  Here is some code:
+print(&amp;#34;hello world&amp;#34;)    Test math  And here is some math: \begin{align*} ∫ - ∞  ∞ x dx = 0 \end{align*}
+  </description>
     </item>
     
   </channel>
