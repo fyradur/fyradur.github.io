@@ -55,10 +55,10 @@ params:
 
     # profile-mode
     profileMode:
-        enabled: false # needs to be explicitly set
-        title: ExampleSite
-        subtitle: "This is subtitle"
-        imageUrl: "<img location>"
+        enabled: true # needs to be explicitly set
+        title: Blog of Fyradur
+        subtitle: "Articles related to math and technology"
+        imageUrl: "./public/images/fyradur.png"
         imageWidth: 120
         imageHeight: 120
         imageTitle: my image
@@ -70,12 +70,12 @@ params:
 
     # home-info mode
     homeInfoParams:
-        Title: "John Möller's Blog"
+        Title: "Blog of Fyradur"
         Content: Articles related to math and technology.
 
     socialIcons:
         - name: github
-          url: "https://github.com/gogl0l"
+          url: "https://github.com/fyradur"
 
     analytics:
         google:
@@ -91,7 +91,7 @@ params:
         hiddenInSingle: true # hide on single page
 
     editPost:
-        URL: "https://github.com/<path_to_repo>/content"
+        URL: "https://github.com/fyradur/fyradur.github.io/content"
         Text: "Suggest Changes" # edit text
         appendFilePath: true # to append file path to Edit link
 
