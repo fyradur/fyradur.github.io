@@ -6,4 +6,4 @@
   #+variable: value
   #+list[]: value_1 value_2 value_3
 
-[[/notes/mm5012.pdf][Bonusuppgift 2]]
+[[/notes/mm5010.pdf][Bonusuppgift 2]]
