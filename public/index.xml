@@ -1,37 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog of John Möller</title>
-    <link>https://examplesite.com/</link>
-    <description>Recent content on Blog of John Möller</description>
+    <title>Blog of Fyradur</title>
+    <link>https://fyradur.github.io/</link>
+    <description>Recent content on Blog of Fyradur</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 27 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://examplesite.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fyradur.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Monads finally explained</title>
-      <link>https://examplesite.com/articles/monads/</link>
+      <link>https://fyradur.github.io/articles/monads/</link>
       <pubDate>Mon, 27 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://examplesite.com/articles/monads/</guid>
+      <guid>https://fyradur.github.io/articles/monads/</guid>
       <description>Introduction  The concept of a monad is probably the most infamous among begginers who are learning functional programming. It&amp;#39;s notoriousness is understandable as it is from an advanced mathematical field called Category Theory. We know that even though math is essential for programming, the enthusiasm for the subject among programmers isn&amp;#39;t guaranteed. So if you didn&amp;#39;t like High school algebra, then it&amp;#39;s pretty self explanatory why a graduate math subject is difficult.</description>
     </item>
     
     <item>
-      <title>First post</title>
-      <link>https://examplesite.com/blog/my-first-post/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Monads finally explained</title>
+      <link>https://fyradur.github.io/articles/test-article/</link>
+      <pubDate>Mon, 27 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://examplesite.com/blog/my-first-post/</guid>
-      <description> What is this?  This is the first post to this hugo website.
+      <guid>https://fyradur.github.io/articles/test-article/</guid>
+      <description> Test code  Here is some code:
+print(&amp;#34;hello world&amp;#34;)    Test math  And here is some math: \begin{align*} ∫ - ∞  ∞ x dx = 0 \end{align*}
   </description>
     </item>
     
     <item>
-      <title>MM5010</title>
-      <link>https://examplesite.com/notes/mm5012/</link>
+      <title>First post</title>
+      <link>https://fyradur.github.io/blog/my-first-post/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://examplesite.com/notes/mm5012/</guid>
-      <description>Notes</description>
+      <guid>https://fyradur.github.io/blog/my-first-post/</guid>
+      <description> What is this?  This is the first post to this hugo website. It is a test post
+print(5+10)    </description>
+    </item>
+    
+    <item>
+      <title>Linear Algebra (Swedish)</title>
+      <link>https://fyradur.github.io/notes/mm5012/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fyradur.github.io/notes/mm5012/</guid>
+      <description>Test change Notes</description>
     </item>
     
   </channel>
