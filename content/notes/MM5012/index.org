@@ -1,9 +1,9 @@
 #+title: Linear Algebra (Swedish)
-  #+author: John Möller
-  #+lastmod: 2021-09-27
-  #+categories[]: 
-  #+draft: true
-  #+variable: value
-  #+list[]: value_1 value_2 value_3
+#+author: John Möller
+#+lastmod: 2021-09-27
+#+categories[]: 
+#+draft: false
+#+variable: value
+#+list[]: value_1 value_2 value_3
 
 [[/notes/mm5012.pdf][Lecture notes]]

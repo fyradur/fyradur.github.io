@@ -7,6 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 27 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fyradur.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Analys del a (Swedish)</title>
+      <link>https://fyradur.github.io/notes/mm5010/</link>
+      <pubDate>Mon, 27 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fyradur.github.io/notes/mm5010/</guid>
+      <description>Bonusuppgift 2</description>
+    </item>
+    
+    <item>
+      <title>Linear Algebra (Swedish)</title>
+      <link>https://fyradur.github.io/notes/mm5012/</link>
+      <pubDate>Mon, 27 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fyradur.github.io/notes/mm5012/</guid>
+      <description>Lecture notes</description>
+    </item>
+    
+    <item>
       <title>Monads finally explained</title>
       <link>https://fyradur.github.io/articles/monads/</link>
       <pubDate>Mon, 27 Sep 2021 00:00:00 +0000</pubDate>
@@ -27,15 +45,6 @@ print(&amp;#34;hello world&amp;#34;)    Test math  And here is some math: \begin
     </item>
     
     <item>
-      <title>Analys del a (Swedish)</title>
-      <link>https://fyradur.github.io/notes/mm5010/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://fyradur.github.io/notes/mm5010/</guid>
-      <description>Bonusuppgift 2</description>
-    </item>
-    
-    <item>
       <title>First post</title>
       <link>https://fyradur.github.io/blog/my-first-post/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -43,15 +52,6 @@ print(&amp;#34;hello world&amp;#34;)    Test math  And here is some math: \begin
       <guid>https://fyradur.github.io/blog/my-first-post/</guid>
       <description> What is this?  This is the first post to this hugo website. It is a test post
 print(5+10)    </description>
-    </item>
-    
-    <item>
-      <title>Linear Algebra (Swedish)</title>
-      <link>https://fyradur.github.io/notes/mm5012/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://fyradur.github.io/notes/mm5012/</guid>
-      <description>Lecture notes</description>
     </item>
     
   </channel>
