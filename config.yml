@@ -56,20 +56,18 @@ params:
     # profile-mode
     profileMode:
         enabled: true # needs to be explicitly set
-        title: Blog of Fyradur
+        title: Fyradur
         subtitle: "Articles related to math and technology"
         imageUrl: "/images/fyradur.png"
         imageWidth: 120
         imageHeight: 120
         imageTitle: my image
         buttons:
-            - name: Posts
-              url: posts
-            - name: Tags
-              url: tags
+            - name: Articles
+              url: articles
             - name: Blog
               url: blog
-            - name: Notes
+            - name: Course Notes
               url: notes
 
 
