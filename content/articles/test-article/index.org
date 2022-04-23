@@ -1,0 +1,19 @@
+#+title: Monads finally explained
+#+author: John Möller
+#+lastmod: 2021-09-27
+#+categories[]: programming
+#+draft: false
+#+variable: value
+#+list[]: value_1 value_2 value_3
+* Test code
+Here is some code:
+#+begin_src python :results output
+print("hello world")
+#+end_src
+* Test math
+And here is some math:
+\begin{align*}
+\int_{ - \infty }^{  \infty} x dx  = 0
+\end{align*}
+
+
