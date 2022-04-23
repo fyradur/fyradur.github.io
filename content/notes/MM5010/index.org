@@ -1,0 +1,9 @@
+#+title: Analys del a (Swedish)
+  #+author: John Möller
+  #+lastmod: 2021-09-27
+  #+categories[]: 
+  #+draft: true
+  #+variable: value
+  #+list[]: value_1 value_2 value_3
+
+[[/notes/mm5012.pdf][Bonusuppgift 2]]

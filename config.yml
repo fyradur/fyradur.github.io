@@ -58,7 +58,7 @@ params:
         enabled: true # needs to be explicitly set
         title: Blog of Fyradur
         subtitle: "Articles related to math and technology"
-        imageUrl: "./public/images/fyradur.png"
+        imageUrl: "/images/fyradur.png"
         imageWidth: 120
         imageHeight: 120
         imageTitle: my image
@@ -67,6 +67,12 @@ params:
               url: posts
             - name: Tags
               url: tags
+            - name: Blog
+              url: blog
+            - name: Notes
+              url: notes
+
+
 
     # home-info mode
     homeInfoParams:
@@ -107,19 +113,19 @@ params:
         keys: ["title", "permalink", "summary", "content"]
 menu:
     main:
-        - identifier: Blog
+        - identifier: blog
           name: Blog
           url: /blog/
           weight: 10
-        - identifier: Articles
+        - identifier: articles
           name: Articles
           url: /articles/
           weight: 10
-        - identifier: Course notes
+        - identifier: notes
           name: Course notes
           url: /notes/
           weight: 10
-        - identifier: Tags
+        - identifier: tags
           name: Tags
           url: /tags/
           weight: 20
