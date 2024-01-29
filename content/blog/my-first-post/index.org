@@ -7,7 +7,7 @@
   #+list[]: value_1 value_2 value_3
 
 * What is this?
-This is the first post to this hugo website. It is a test post
+This is the first post to this hugo website. It is a test post. Another test thingy.
 
 #+begin_src python :results output :session
 print(5+10)
