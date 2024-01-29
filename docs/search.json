@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "fyradur",
     "section": "",
-    "text": "Post template\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nJan 29, 2024\n\n\nJohn Möller\n\n\n\n\n\n\nNo matching items"
+    "text": "Test post\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nJan 29, 2024\n\n\nJohn Möller\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -16,8 +16,8 @@
   {
     "objectID": "posts/Test post/index.html",
     "href": "posts/Test post/index.html",
-    "title": "Post template",
+    "title": "Test post",
     "section": "",
-    "text": "print(\"hello\")\n\nhello"
+    "text": "print(\"hello\")\n\nhello\n\n\n\n# Import necessary libraries\nimport pandas as pd\nimport plotly.express as px\n\n# Fetch the data\nurl = \"https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv\"\ndf = pd.read_csv(url)\n\n# Create an interactive scatter plot\nfig = px.scatter(df, x=\"sepal_width\", y=\"sepal_length\", color=\"species\", title=\"Iris Dataset: Sepal Length vs Sepal Width\")\n\n# Display the plot\nfig.show()\n\nUnable to display output for mime type(s): application/vnd.plotly.v1+json"
   }
 ]
