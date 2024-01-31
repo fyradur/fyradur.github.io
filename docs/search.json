@@ -1,17 +1,17 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Blog of John Möller",
+    "section": "",
+    "text": "I am a bachelore’s student of mathematics at Stockholm University. On this blog I document my progress in learning about math, programming and data science."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "fyradur",
     "section": "",
     "text": "Load Online CSV to Dataframe\n\n\n\n\n\n\nSelf-Study Notes\n\n\nProgramming\n\n\nData Science\n\n\n\n\n\n\n\n\n\nJan 31, 2024\n\n\nJohn Möller\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this blog"
   },
   {
     "objectID": "posts/LoadOnlineCSVToDataframe/index.html",
