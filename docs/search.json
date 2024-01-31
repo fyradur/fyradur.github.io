@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "fyradur",
     "section": "",
-    "text": "Hello World\n\n\n\n\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nJan 31, 2024\n\n\nJohn Möller\n\n\n\n\n\n\n\n\n\n\n\n\nTest post\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nJan 29, 2024\n\n\nJohn Möller\n\n\n\n\n\n\nNo matching items"
+    "text": "No matching items"
   },
   {
     "objectID": "about.html",
@@ -12,26 +12,5 @@
     "title": "About",
     "section": "",
     "text": "About this blog"
-  },
-  {
-    "objectID": "posts/Test post/index.html",
-    "href": "posts/Test post/index.html",
-    "title": "Test post",
-    "section": "",
-    "text": "print(\"hello\")\n\nhello\n# Import necessary libraries\nimport pandas as pd\nimport plotly.express as px\n\n# Fetch the data\nurl = \"https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv\"\ndf = pd.read_csv(url)\n\n# Create an interactive scatter plot\nfig = px.scatter(df, x=\"sepal_width\", y=\"sepal_length\", color=\"species\", title=\"Iris Dataset: Sepal Length vs Sepal Width\")\n\n# Display the plot\nfig.show()\n# Create a distribution plot for sepal_width\nfig = px.histogram(df, x=\"sepal_width\", nbins=30, title=\"Distribution of Sepal Width\")\n\n# Display the plot\nfig.show()"
-  },
-  {
-    "objectID": "posts/Test post/index.html#proof-of-the-fundamental-theorem-of-calculus",
-    "href": "posts/Test post/index.html#proof-of-the-fundamental-theorem-of-calculus",
-    "title": "Test post",
-    "section": "Proof of the Fundamental Theorem of Calculus",
-    "text": "Proof of the Fundamental Theorem of Calculus\nThe Fundamental Theorem of Calculus states that if a function \\(f\\) is continuous over the interval \\([a, b]\\) and \\(F\\) is an antiderivative of \\(f\\) on \\([a, b]\\), then:\n\\[\\int_{a}^{b} f(x) dx = F(b) - F(a)\\]\nProof:\nLet’s consider \\(F(x)\\) as the area under the curve of \\(f(t)\\) from \\(a\\) to \\(x\\), where \\(a \\leq x \\leq b\\). So, by definition:\n\\[F(x) = \\int_{a}^{x} f(t) dt\\]\nNow, let’s consider \\(h\\) as a small change in \\(x\\), then the change in \\(F(x)\\), which is \\(F(x+h) - F(x)\\), can be given as:\n\\[F(x+h) - F(x) = \\int_{a}^{x+h} f(t) dt - \\int_{a}^{x} f(t) dt = \\int_{x}^{x+h} f(t) dt\\]\nAs \\(h\\) approaches \\(0\\), the value of \\(\\int_{x}^{x+h} f(t) dt\\) approaches \\(f(x)h\\). Therefore, the derivative of \\(F(x)\\) with respect to \\(x\\) is \\(f(x)\\):\n\\[F'(x) = \\lim_{h \\to 0} \\frac{F(x+h) - F(x)}{h} = f(x)\\]\nThis proves the Fundamental Theorem of Calculus."
-  },
-  {
-    "objectID": "posts/HelloWorld/index.html",
-    "href": "posts/HelloWorld/index.html",
-    "title": "Hello World",
-    "section": "",
-    "text": "This is how you print “Hello world!” in python:\n\nprint(\"Hello world!\")\n\nHello world!\n\n\nThis is how you do a cool plot:\n\nimport pandas as pd\nimport plotly.express as px\n\n# URL for the iris dataset\nurl = 'https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv'\n\n# Read the online CSV file into a pandas dataframe\ndf = pd.read_csv(url)\n\n# Create an interactive scatter plot\nfig = px.scatter(df, x='sepal_length', y='sepal_width', color='species', hover_data=['petal_length', 'petal_width'])\n\n# Show the plot\nfig.show()"
   }
 ]

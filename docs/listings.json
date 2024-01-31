@@ -1,9 +1,6 @@
 [
   {
     "listing": "/index.html",
-    "items": [
-      "/posts/HelloWorld/index.html",
-      "/posts/Test post/index.html"
-    ]
+    "items": []
   }
 ]
