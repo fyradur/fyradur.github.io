@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "fyradur",
     "section": "",
-    "text": "No matching items"
+    "text": "Load Online CSV to Dataframe\n\n\n\n\n\n\nSelf-Study Notes\n\n\n\n\n\n\n\n\n\nJan 31, 2024\n\n\nJohn Möller\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -12,5 +12,12 @@
     "title": "About",
     "section": "",
     "text": "About this blog"
+  },
+  {
+    "objectID": "posts/LoadOnlineCSVToDataframe/index.html",
+    "href": "posts/LoadOnlineCSVToDataframe/index.html",
+    "title": "Load Online CSV to Dataframe",
+    "section": "",
+    "text": "The read_csv function from pandas can take both local file paths and URLs.\n\nimport pandas as pd\n\n# URL of the online CSV file\nurl = \"https://raw.githubusercontent.com/uiuc-cse/data-fa14/gh-pages/data/iris.csv\"\n\n# Load the CSV file into a dataframe\ndf = pd.read_csv(url)\n\n# Display the head of the dataframe\ndf.head()\n\n\n\n\n\n\n\n\nsepal_length\nsepal_width\npetal_length\npetal_width\nspecies\n\n\n\n\n0\n5.1\n3.5\n1.4\n0.2\nsetosa\n\n\n1\n4.9\n3.0\n1.4\n0.2\nsetosa\n\n\n2\n4.7\n3.2\n1.3\n0.2\nsetosa\n\n\n3\n4.6\n3.1\n1.5\n0.2\nsetosa\n\n\n4\n5.0\n3.6\n1.4\n0.2\nsetosa"
   }
 ]
