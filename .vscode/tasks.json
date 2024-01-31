@@ -16,6 +16,26 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "label": "Create New Post",
+            "type": "shell",
+            "command": "/home/john/scripts/create-new-post.sh",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Create New Notebook",
+            "type": "shell",
+            "command": "/home/john/scripts/create-new-notebook.sh",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
         }
     ]
 }
