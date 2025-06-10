@@ -2,7 +2,6 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/template/template.html",
       "/posts/LoadOnlineCSVToDataframe/index.html",
       "/posts/RakeAndWordCloud/index.html",
       "/posts/HTMLParserBasics/index.html"

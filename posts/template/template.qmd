@@ -3,6 +3,6 @@ title: "Template"
 author: "John Möller"
 description: "Post description"
 date: "6/10/2025"
-draft: false
+draft: true
 ---
 This is how it looks like
