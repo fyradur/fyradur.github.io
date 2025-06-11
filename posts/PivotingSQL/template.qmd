@@ -1,0 +1,166 @@
+---
+title: "Pivoting in SQL"
+author: "John Möller"
+date: "6/11/2025"
+draft: false
+---
+# Long and wide data
+Consider these two tables (made up data):
+
+```{r}
+#| echo: false
+library(tidyr)
+library(knitr)
+df <- data.frame(Store = c("Media Markt", "Media Markt",
+                           "Elgiganten", "Elgiganten",
+                           "Expert", "Expert"),
+                 Day = c("Weekday", "Weekend",
+                         "Weekday", "Weekend",
+                         "Weekday", "Weekend"),
+                 Status = c("Open", "Closed",
+                            "Open", "Open",
+                            "Closed", "Closed"))
+kable(df, caption = "'Longer' table")
+```
+
+```{r}
+#| echo: false
+kable(tidyr::pivot_wider(df, names_from = Day, values_from = Status), caption = "'Wider' table")
+```
+
+They contain the same kind of information (except perhaps specifying the open status as specifically "Status"). Each of these forms have different advantages, thus it would be useful to be able to convert between these two formats in SQL.
+
+# Pivot longer
+```{r}
+#| include: false
+# Fixing SQL connection
+library(DBI)
+library(RSQLite)
+library(here) 
+db_file_path <- here("posts/PivotingSQL/database")
+con <- dbConnect(RSQLite::SQLite(), dbname = db_file_path)
+```
+
+
+Consider the table birthstatistics which first lines looks like this:
+
+```{sql connection=con}
+SELECT * FROM birthstatistics
+LIMIT 5
+```
+
+Let's say we want to do a bunch of operations where we specify mathematical
+constraints on the year number. Let's say one of them is to get the data
+where the year is an even number.
+If there was a column called Year we could specify "WHERE Year % 2 = 0".
+But we can't do that as each year is a column and not a cell value in a column.
+ Thus we would like instead a form where there was a column called "Year".
+Then we can have the values in each cell be inside a single column that we will call "Persons". This is one way to achieve that in SQL (not the prettiest way, but one of the most straightforward):
+```{sql connection=con}
+CREATE View long_table AS
+SELECT region, sex, 'foreign/Swedish', 2002 as Year, [2002] as Persons FROM birthstatistics
+UNION ALL
+SELECT region, sex, 'foreign/Swedish', 2003 as Year, [2003] as Persons FROM birthstatistics
+UNION ALL
+SELECT region, sex, 'foreign/Swedish', 2004 as Year, [2004] as Persons FROM birthstatistics
+UNION ALL
+SELECT region, sex, 'foreign/Swedish', 2005 as Year, [2005] as Persons FROM birthstatistics
+UNION ALL
+SELECT region, sex, 'foreign/Swedish', 2006 as Year, [2006] as Persons FROM birthstatistics
+UNION ALL
+SELECT region, sex, 'foreign/Swedish', 2007 as Year, [2007] as Persons FROM birthstatistics
+UNION ALL
+SELECT region, sex, 'foreign/Swedish', 2008 as Year, [2008] as Persons FROM birthstatistics
+UNION ALL
+SELECT region, sex, 'foreign/Swedish', 2009 as Year, [2009] as Persons FROM birthstatistics
+UNION ALL
+SELECT region, sex, 'foreign/Swedish', 2010 as Year, [2010] as Persons FROM birthstatistics
+UNION ALL
+SELECT region, sex, 'foreign/Swedish', 2011 as Year, [2011] as Persons FROM birthstatistics
+UNION ALL
+SELECT region, sex, 'foreign/Swedish', 2012 as Year, [2012] as Persons FROM birthstatistics
+UNION ALL
+SELECT region, sex, 'foreign/Swedish', 2013 as Year, [2013] as Persons FROM birthstatistics
+UNION ALL
+SELECT region, sex, 'foreign/Swedish', 2014 as Year, [2014] as Persons FROM birthstatistics
+UNION ALL
+SELECT region, sex, 'foreign/Swedish', 2015 as Year, [2015] as Persons FROM birthstatistics
+UNION ALL
+SELECT region, sex, 'foreign/Swedish', 2016 as Year, [2016] as Persons FROM birthstatistics
+UNION ALL
+SELECT region, sex, 'foreign/Swedish', 2017 as Year, [2017] as Persons FROM birthstatistics
+UNION ALL
+SELECT region, sex, 'foreign/Swedish', 2018 as Year, [2018] as Persons FROM birthstatistics
+UNION ALL
+SELECT region, sex, 'foreign/Swedish', 2019 as Year, [2019] as Persons FROM birthstatistics
+UNION ALL
+SELECT region, sex, 'foreign/Swedish', 2020 as Year, [2020] as Persons FROM birthstatistics;
+```
+
+Now we can do a statement like the following:
+```{sql connection=con}
+SELECT * FROM long_table
+WHERE Year % 2 = 0 AND sex = "girls" AND Persons > 100000
+LIMIT 5;
+```
+
+# Pivot wider
+Now let's say we want boys and girls to be columns. We can achieve that with the following:
+
+```{sql connection=con}
+CREATE VIEW My_view AS
+SELECT region, 'foreign/Swedish', Year,
+  SUM(CASE WHEN sex = 'boys' THEN Persons ELSE 0 END) AS Boys,
+  SUM(CASE WHEN sex = 'girls' THEN Persons ELSE 0 END) AS Girls
+FROM long_table
+GROUP BY region, 'foreign/Swedish', Year
+```
+
+Why are we using SUM? Well in this example we kind of assume that given a distinct
+combination of the columns 'region', 'foreign/Swedish' and 'Year', then there only exists on row where 'sex' is specified as for example boy, and the value in 'Persons' is the value we'll put under the column 'boy' in the widened table with that combination. But what if there are multiple? One way for example to deal with it is to just pick the first row and ignore the others. But one way that usually generalizes well is to sum all of them (perhaps each row symbolizes a sub-region for example).
+
+Here's an example of a query using the the view with widened data:
+```{sql connection=con}
+SELECT * FROM My_View
+WHERE Year % 2 = 0
+LIMIT 5
+```
+
+As an example let's create two graphs for the total boys through the years and the total
+girls through the years.
+
+```{sql connection=con}
+CREATE VIEW My_total AS
+SELECT Year, SUM(Boys) AS Boys, SUM(Girls) AS Girls
+FROM My_view
+GROUP BY Year
+```
+
+
+```{r}
+library(ggplot2)
+my_view_df <- dbGetQuery(con, "SELECT * FROM My_total")
+ggplot(my_view_df, aes(Year, Boys)) + geom_line()
+ggplot(my_view_df, aes(Year, Girls)) + geom_line()
+```
+
+
+```{sql connection=con}
+#| include: false
+DROP VIEW long_table;
+```
+
+```{sql connection=con}
+#| include: false
+DROP VIEW My_view;
+```
+```{sql connection=con}
+#| include: false
+DROP VIEW My_total
+```
+
+```{r}
+#| include: false
+dbDisconnect(con)
+```
+

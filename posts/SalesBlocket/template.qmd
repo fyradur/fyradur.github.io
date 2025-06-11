@@ -1,0 +1,22 @@
+---
+title: "Modelling time until purchase on Blocket"
+author: "John Möller"
+date: "6/10/2025"
+draft: true
+---
+# Background
+The online second hand market has a lot of online websites. In Sweden a popular one is Blocket.
+If you search a certain item you can see all other sellers and their prices and when they published the
+advert. But what you can't see is previous sold products. What if you want to have an idea of
+if you publish a certain product with a certain price how long will it take until you sell it?
+In this post we'll try to estimate this value using available data.
+
+# Notation
+All uppercase variables will be assumed to be random variables and the lower case of it
+will be the expected value.
+
+# Variables
+- Time until sold (a function of set price)
+- Time until seller takes down a post (a function of set price)
+
+![](https://i.imgur.com/kRJkacV.png)
