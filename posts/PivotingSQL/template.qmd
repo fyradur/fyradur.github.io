@@ -3,6 +3,7 @@ title: "Pivoting in SQL"
 author: "John Möller"
 date: "6/11/2025"
 draft: false
+categories: ['SQL']
 ---
 # Long and wide data
 Consider these two tables (made up data):
