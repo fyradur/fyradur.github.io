@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "fyradur",
+    "title": "Posts",
     "section": "",
-    "text": "Pivoting in SQL\n\n\n\nSQL\n\n\n\n\n\n\n\n\n\nJun 11, 2025\n\n\nJohn Möller\n\n\n\n\n\n\n\n\n\n\n\n\nRake and Word Cloud\n\n\n\nSelf-Study Notes\n\nPython\n\nData Visualization\n\n\n\n\n\n\n\n\n\nJan 31, 2024\n\n\nJohn Möller\n\n\n\n\n\n\n\n\n\n\n\n\nHTMLParser Basics\n\n\n\nSelf-Study Notes\n\nPython\n\n\n\n\n\n\n\n\n\nJan 31, 2024\n\n\nJohn Möller\n\n\n\n\n\nNo matching items"
+    "text": "Pivoting in SQL\n\n\n\nSQL\n\n\n\n\n\n\n\n\n\nJun 11, 2025\n\n\nJohn Möller\n\n\n\n\n\n\n\n\n\n\n\n\nTemplate\n\n\nPost description\n\n\n\n\n\nJun 10, 2025\n\n\nJohn Möller\n\n\n\n\n\n\n\n\n\n\n\n\nTemplate\n\n\nPost description\n\n\n\n\n\nJun 10, 2025\n\n\nJohn Möller\n\n\n\n\n\n\n\n\n\n\n\n\nModelling time until purchase on Blocket\n\n\n\n\n\n\n\n\nJun 10, 2025\n\n\nJohn Möller\n\n\n\n\n\n\n\n\n\n\n\n\nLoad Online CSV to Dataframe\n\n\n\nSelf-Study Notes\n\nPandas\n\n\n\n\n\n\n\n\n\nJan 31, 2024\n\n\nJohn Möller\n\n\n\n\n\n\n\n\n\n\n\n\nRake and Word Cloud\n\n\n\nSelf-Study Notes\n\nPython\n\nData Visualization\n\n\n\n\n\n\n\n\n\nJan 31, 2024\n\n\nJohn Möller\n\n\n\n\n\n\n\n\n\n\n\n\nHTMLParser Basics\n\n\n\nSelf-Study Notes\n\nPython\n\n\n\n\n\n\n\n\n\nJan 31, 2024\n\n\nJohn Möller\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/RakeAndWordCloud/index.html",
@@ -19,13 +19,6 @@
     "title": "Blog of John Möller",
     "section": "",
     "text": "I am a bachelore’s student of mathematics at Stockholm University. On this blog I document my progress in learning about math, programming and data science."
-  },
-  {
-    "objectID": "posts/LoadOnlineCSVToDataframe/index.html",
-    "href": "posts/LoadOnlineCSVToDataframe/index.html",
-    "title": "Load Online CSV to Dataframe",
-    "section": "",
-    "text": "The read_csv function from pandas can take both local file paths and URLs.\n\nimport pandas as pd\n\n# URL of the online CSV file\nurl = \"https://raw.githubusercontent.com/uiuc-cse/data-fa14/gh-pages/data/iris.csv\"\n\n# Load the CSV file into a dataframe\ndf = pd.read_csv(url)\n\n# Display the head of the dataframe\ndf.head()\n\n\n\n\n\n\n\n\nsepal_length\nsepal_width\npetal_length\npetal_width\nspecies\n\n\n\n\n0\n5.1\n3.5\n1.4\n0.2\nsetosa\n\n\n1\n4.9\n3.0\n1.4\n0.2\nsetosa\n\n\n2\n4.7\n3.2\n1.3\n0.2\nsetosa\n\n\n3\n4.6\n3.1\n1.5\n0.2\nsetosa\n\n\n4\n5.0\n3.6\n1.4\n0.2\nsetosa"
   },
   {
     "objectID": "posts/HTMLParserBasics/index.html",

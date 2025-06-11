@@ -6,7 +6,10 @@ website:
   title: "fyradur"
   navbar:
     right:
-      - about.qmd
+      - text: "Posts"
+        href: "index.qmd"
+      - text: "About"
+        href: "about.qmd"
       - icon: github
         href: https://github.com/fyradur
       - icon: linkedin
