@@ -3,10 +3,6 @@
     "listing": "/index.html",
     "items": [
       "/posts/PivotingSQL/template.html",
-      "/posts/Explore/template.html",
-      "/posts/template/template.html",
-      "/posts/SalesBlocket/template.html",
-      "/posts/LoadOnlineCSVToDataframe/index.html",
       "/posts/RakeAndWordCloud/index.html",
       "/posts/HTMLParserBasics/index.html"
     ]
