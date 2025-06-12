@@ -1,0 +1,18 @@
+---
+title: "What if We Knew Next Year's Annual Reports Today?"
+author: "John Möller"
+date: "6/12/2025"
+draft: true
+---
+# Introduction
+Let's say you are an underpaid clerk for a big company, and during a routine day you are
+carrying a bunch of annual reports, when suddenly, you become magically teleported back 1 year
+in the past right in front of past you. Out of shock you drop all your reports, but before you
+even get to talk with your past self you are teleported back to the present.
+Now the past you have felt unmotivated previously to analyze data to predict
+stock prices because of the [efficient-market hypothesis](https://www.wikiwand.com/en/articles/Efficient-market_hypothesis)
+but now the past you recognizes this is potentially novel data that isn't subject to that effect.
+So the question is now: *Are these reports useful data for predicting stock price, and in that case,
+how do we use this data?*
+
+In this article we will investigate this question by looking at available previous reports and look how their metrics relate to the stock performance of the year it is describing. Then we will try to develop KPIs to these reports that will be useful for aiding us in how to buy stocks a year before the reports release.
