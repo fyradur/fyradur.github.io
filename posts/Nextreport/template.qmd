@@ -16,3 +16,50 @@ So the question is now: *Are these reports useful data for predicting stock pric
 how do we use this data?*
 
 In this article we will investigate this question by looking at available previous reports and look how their metrics relate to the stock performance of the year it is describing. Then we will try to develop KPIs to these reports that will be useful for aiding us in how to buy stocks a year before the reports release.
+
+# Data collection
+
+We will collect data regarding
+
+```{r}
+#| include: false
+library(reticulate)
+py_require("yfinance")
+py_require("pytickersymbols")
+py_require("pyyaml")
+py_require("pandas")
+```
+
+
+```{python}
+import yfinance as yf
+import pandas as pd
+get_cashflow = lambda name: (
+ yf.Ticker(name).get_cashflow()
+ .reset_index(names="Metric")
+ .melt(id_vars=['Metric'], var_name='Date', value_name='Value')
+ .assign(Stock = name) 
+)
+
+get_income_stmt = lambda name: (
+ yf.Ticker(name).get_income_stmt()
+ .reset_index(names="Metric")
+ .melt(id_vars=['Metric'], var_name='Date', value_name='Value')
+ .assign(Stock = name) 
+)
+get_balance_sheet = lambda name: (
+ yf.Ticker(name).get_balance_sheet()
+ .reset_index(names="Metric")
+ .melt(id_vars=['Metric'], var_name='Date', value_name='Value')
+ .assign(Stock = name) 
+)
+get_balance_sheet("EBAY").iloc[1:3,0:4]
+```
+
+```{python}
+from pytickersymbols import PyTickerSymbols
+stock_data = PyTickerSymbols()
+sp100_yahoo = stock_data.get_sp_500_nyc_yahoo_tickers()
+sp100_yahoo
+```
+
