@@ -1,0 +1,1 @@
+This blog uses the [Obsidian note taking software](https://obsidian.md/) and uses [Quartz 4](https://quartz.jzhao.xyz/) to be hosted on this [github repo](https://github.com/fyradur/fyradur.github.io) using github pages.

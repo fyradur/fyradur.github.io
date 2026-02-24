@@ -1,6 +1,6 @@
 ---
-title: Welcome to Quartz
+title: Blog of John Möller
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+Selected posts:
+[[How this blog is hosted]]
