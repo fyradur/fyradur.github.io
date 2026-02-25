@@ -1,0 +1,1 @@
+A column in a [[Candidate key]].

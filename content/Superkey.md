@@ -1,0 +1,1 @@
+A set of columns that uniquely identifies each row in a table

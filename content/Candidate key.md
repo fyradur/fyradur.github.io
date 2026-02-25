@@ -1,0 +1,1 @@
+A [[Superkey]] that doesn't contain columns that if removed would still make it a [[Superkey]].
